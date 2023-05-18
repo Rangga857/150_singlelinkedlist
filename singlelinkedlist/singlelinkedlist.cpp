@@ -105,3 +105,10 @@ void traverse() {
 		}
 	}
 }
+
+void searchData() {
+	if (listEmpty()) {
+		cout << "List kosong" << endl;
+		
+	}
+}
