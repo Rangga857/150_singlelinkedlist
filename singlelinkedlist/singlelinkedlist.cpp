@@ -122,7 +122,7 @@ void searchData() {
 			if (currentNode->noMhs == nim) {
 				cout << "NIM : " << currentNode->noMhs << ", Nama" << currentNode->name << endl;
 				return;
-				}
+			}
 			currentNode = currentNode->next;
 		}
 		cout << "Data tidak ditemukan" << endl;
@@ -141,7 +141,33 @@ int main() {
 			cout << "4. Cari Data" << endl;
 			cout << "Pilihan : ";
 			cin >> pilihan;
-			switch
+			switch (pilihan)
+			{
+			case 1:
+				addNode();
+				cout << "Data Berhasil Ditambahkan " << endl;
+				system("pause");
+				system("cls");
+				break;
+			case 2:
+				if (listEmpty())
+				{
+					cout << "List Kosong " << endl;
+					system("pause");
+					system("cls");
+					break;
+				}
+				int nim;
+				cout << "Masukkan NIM :";
+				cin >> nim;
+				if (deleteNode(nim)) {
+					cout << "nim" << "berhasil dihapus" << endl;
+					system("pause");
+					system("cls");
+				}
+			
+			}
+
 
 		}
 	}
