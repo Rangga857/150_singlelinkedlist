@@ -89,3 +89,9 @@ bool listEmpty() {
 	else
 		return false;
 }
+
+void traverse() {
+	if (listEmpty()) {
+		cout << "List kosong" << endl
+	}
+}
